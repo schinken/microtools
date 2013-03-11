@@ -6,5 +6,3 @@ CREATE TABLE IF NOT EXISTS mac_vendors (
     KEY macaddr (macaddr)
 ) ENGINE=MyISAM;
 
-TRUNCATE mac_vendors;
-
