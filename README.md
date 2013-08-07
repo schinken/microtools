@@ -11,3 +11,7 @@ A simple tool to convert a pixel coordinate to a degree-coordinate for krpano ho
 ## aqbanking
 
 Tiny script used for backspace to retrieve the account balance with an cronjob, and write it to the database and into a file for snmp query
+
+## mac_vendors
+
+imports mac address vendors into a mysql database
