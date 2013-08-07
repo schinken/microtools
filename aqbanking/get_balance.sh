@@ -52,7 +52,7 @@ fi
 
 echo $BALANCE > $SNMP_FILE
 
-exort MYSQL_PWD="$SQL_PASS"
+export MYSQL_PWD="$SQL_PASS"
 echo "INSERT INTO accounting (blz, kto, balance, erfda) VALUE ('$BLZ', '$KTO', $BALANCE, NOW())" | \
         mysql -h "$SQL_HOST" -u "$SQL_USER" "$SQL_NAME"
 
