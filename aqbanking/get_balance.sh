@@ -52,8 +52,8 @@ fi
 
 echo $BALANCE > $SNMP_FILE
 
-MYSQL_PWD="$SQL_PASS"
-echo "INSERT INTO account (blz, kto, balance, erfda) VALUE ('$BLZ', '$KTO', $BALANCE, NOW())" | \
+exort MYSQL_PWD="$SQL_PASS"
+echo "INSERT INTO accounting (blz, kto, balance, erfda) VALUE ('$BLZ', '$KTO', $BALANCE, NOW())" | \
         mysql -h "$SQL_HOST" -u "$SQL_USER" "$SQL_NAME"
 
 unset MYSQL_PWD
