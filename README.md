@@ -15,3 +15,7 @@ Tiny script used for backspace to retrieve the account balance with an cronjob, 
 ## mac_vendors
 
 imports mac address vendors into a mysql database
+
+## openhab
+
+contains a script named "gpio.py" which sets up interrupts on GPIO pins for push-buttons which toggles an openhab item
