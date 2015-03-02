@@ -8,13 +8,13 @@ Mehr: http://www.loebhard.com/linux/homebanking
 
 Wenn vorher schon ein Zugang eingerichtet war, sollte man vorher das ~/.aqbanking-Verzeichnis löschen, da sonst aqhbci-tool4 getsysid mit "133: Ambiguous customer specification" antwortet. Vorallem dann, wenn die geänderten Login-Daten auf das gleiche Konto zeigen
 
-## Einrichten
+## Setup
  aqhbci-tool4 adduser --tokentype=pintan -s hbci11.fiducia.de/cgi-bin/hbciservlet -b $BLZ --username=$USERNAME --customer=$USERNAME --user=$USER_ID --hbciversion=300
  
-## Zertifikat akzeptieren
+### Zertifikat akzeptieren
  aqhbci-tool4 getsysid
  
-## daten konfigurieren
+### daten konfigurieren
  vim get_balance.sh 
 
 ## kontostand abfragen
